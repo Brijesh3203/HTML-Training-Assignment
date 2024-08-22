@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="D:\HTML Training Assignment\CSS\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Company</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Analysis</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <span>john Deo</span>
+                </div>
+            </header>
+            <section class="dashboard-cards">
+                <div class="card">
+                    <h3>New Products</h3>
+                    <p>23,456</p>
+                </div>
+                <div class="card">
+                    <h3>Added Products</h3>
+                    <p>2,345</p>
+                </div>
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p>32,456</p>
+                </div>
+                <div class="card">
+                    <h3>Today's Sale</h3>
+                    <p>5,678</p>
+                </div>
+                <div class="card">
+                    <h3>Total Sale</h3>
+                    <p>33,5342</p>
+                </div>
+            </section>
+            <section class="charts">
+                <div class="chart-container">
+                    <canvas id="salesByCountryChart"></canvas>
+                </div>
+            </section>
+            <section class="invoices">
+                <h2>invoices</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>INVOICE</th>
+                            <th>COMPANY NAME</th>
+                            <th>EMAIL</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public adjusting firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Vendor</td>
+                            <td>alma.lawson@example.com</td>
+                            <td>8 Sep, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$20,900</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Property Management Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$10,570</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Subcontractor Company</td>
+                            <td>jackson.graham@example.com</td>
+                            <td>1 Feb, 2020</td>
+                            <td class="status failed">Failed</td>
+                            <td>$10,200</td>
+                        </tr>
+                        <tr>
+                            <td>653518</td>
+                            <td>Mortgage Company</td>
+                            <td>felicia.reid@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td class="status pending">Pending</td>
+                            <td>$12,600</td>
+                        </tr>
+                        <tr>
+                            <td>487441</td>
+                            <td>TPA</td>
+                            <td>dolores.chambers@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$11,170</td>
+                        </tr>
+                        <tr>
+                            <td>267400</td>
+                            <td>Fire Department</td>
+                            <td>nevaeh.simmons@example.com</td>
+                            <td>17 Oct, 2020</td>
+                            <td class="status failed">Failed</td>
+                            <td>$28,000</td>
+                        </tr>
+                        <tr>
+                            <td>449003</td>
+                            <td>Insurance Carrier</td>
+                            <td>curtis.weaver@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td class="status paid">Paid</td>
+                            <td>$10,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="D:\HTML Training Assignment\JS\custom.js"></script>
+</body>
+</html>
